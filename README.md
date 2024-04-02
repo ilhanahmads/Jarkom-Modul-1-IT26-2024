@@ -52,6 +52,13 @@ Setelah berhasil menemukan file malware yang dikirim oleh attacker, kami menjawa
 Flag: `JARKOM2024{beC4refUl_0f_m4lwAr3_u6fCPcnyl1keCrB}`
 
 # 6. Whoami
-<a href="https://ibb.co/dpDD1gR"><img src="https://i.ibb.co/gWJJHVx/Screenshot-2024-04-02-230221.png" alt="Screenshot-2024-04-02-230221" border="0"></a>
-<a href="https://ibb.co/dcRWNmp"><img src="https://i.ibb.co/xsNCnFg/Screenshot-2024-04-02-230332.png" alt="Screenshot-2024-04-02-230332" border="0"></a>
+<a href="https://ibb.co/dpDD1gR"><img src="https://i.ibb.co/gWJJHVx/Screenshot-2024-04-02-230221.png" alt="Screenshot-2024-04-02-230221" border="0"></a> \
+Masih pada file `evidence.pcap` yang berisi serangkaian percobaan masuk oleh attacker serta aktivitas transfer data yang dilakukan oleh attacker setelah berhasil login ke dalam server. Namun, problem pada soal ini adalah kami disuruh mencari identitas nama dari attacker yang mengirimkan file malware. Kami mencoba mengekspor file malware yang telah disisipkan oleh attacker untuk dianalisis.
+
+<a href="https://ibb.co/dcRWNmp"><img src="https://i.ibb.co/xsNCnFg/Screenshot-2024-04-02-230332.png" alt="Screenshot-2024-04-02-230332" border="0"></a> \
+Setelah kami buka pada Visual Studio Code, kami menemukan serangkaian code mencurigakan yang sepertinya sudah mengalami proses encode. 
+
 <a href="https://ibb.co/wCSWc3m"><img src="https://i.ibb.co/WFkyVqJ/Screenshot-2024-04-02-230344.png" alt="Screenshot-2024-04-02-230344" border="0"></a>
+Dengan menggunakan bantuan dari decoder online, kami mencoba mendecode code mencurigakan tersebut dengan format base64. Benar saja, setelah berhasil kami decode, kami mengetahui bahwa attacker ini bernama **Paul Atreides**. Setelah berhasil menemukan nama attacker, kami menjawab pertanyaan soal dan mendapatkan flag berikut untuk disubmit di platform ctfd:
+
+Flag: `JARKOM2024{Duk3_0f_4rak!s_LISAN AL GHAIB!_uhwCYbpjlRJsCAB}`
