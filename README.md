@@ -35,7 +35,7 @@ Flag: `JARKOM2024{Wh3re'5_thE_S4uce_x6fkX7xfyRVsCAB}`
 
 # 4. Creds
 <a href="https://ibb.co/1s6yQDX"><img src="https://i.ibb.co/YDZnQzd/Screenshot-2024-03-31-000750.png" alt="Screenshot-2024-03-31-000750" border="0"></a> \
-Beralih ke file `evidence.pcap`. File pcap tersebut berisi serangkaian percobaan masuk oleh attacker serta aktivitas transfer data yang dilakukan oleh attacker setelah berhasil login ke dalam server. Dengan melakukan capture filter `tcp.stream eq 2` di Wireshark, kami mendapatkan informasi terkait kredensial yang digunakan oleh attacker untuk login ke dalam server seperti pada screenshot di atas yaitu dengan `USER: h3ngk3rTzy` dan `PASS: S!l3ncE` yang dibuktikan dengan adanya response "Login successful." dari server.
+Beralih ke file `evidence.pcap`. File pcap tersebut berisi serangkaian percobaan masuk oleh attacker serta aktivitas transfer data yang dilakukan oleh attacker setelah berhasil login ke dalam server. Dengan melakukan capture filter `tcp.stream eq 2` di Wireshark, kami mendapatkan informasi terkait kredensial yang digunakan oleh attacker untuk login ke dalam server seperti pada screenshot di atas yaitu dengan `USER: h3ngk3rTzy` dan `PASS: S!l3ncE` yang dibuktikan dengan adanya response **Login successful.** dari server.
 
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/wg0j3qF/Screenshot-2024-03-30-234946.png" alt="Screenshot-2024-03-30-234946" border="0"></a> \ 
 Setelah berhasil mendapatkan kredensial attacker, kami menjawab pertanyaan soal dan mendapatkan flag berikut untuk disubmit di platform ctfd:
