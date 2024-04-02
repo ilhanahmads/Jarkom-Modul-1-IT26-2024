@@ -47,4 +47,11 @@ Flag: `JARKOM2024{s3curE_uR_FtP_96wlPzxyyzdek8t}`
 Masih pada file `evidence.pcap` yang berisi serangkaian percobaan masuk oleh attacker serta aktivitas transfer data yang dilakukan oleh attacker setelah berhasil login ke dalam server. Kami menganalisis aktivitas attacker melalui kolom **info**. Setelah mendapati terdapat aktivitas mencurigakan dari attacker yang mana tertera melakukan **STOR** suatu file, kami mencoba **follow stream** paket tersebut dan kami menemukan attacker mengirim sebuah malware berupa file bernama `m4L1c10us_W4re.c`
 
 <a href="https://ibb.co/pZbTXp8"><img src="https://i.ibb.co/92c0YjL/Screenshot-2024-03-30-235030.png" alt="Screenshot-2024-03-30-235030" border="0"></a> \
+Setelah berhasil menemukan file malware yang dikirim oleh attacker, kami menjawab pertanyaan soal dan mendapatkan flag berikut untuk disubmit di platform ctfd:
 
+Flag: `JARKOM2024{beC4refUl_0f_m4lwAr3_u6fCPcnyl1keCrB}`
+
+# 6. Whoami
+<a href="https://ibb.co/dpDD1gR"><img src="https://i.ibb.co/gWJJHVx/Screenshot-2024-04-02-230221.png" alt="Screenshot-2024-04-02-230221" border="0"></a>
+<a href="https://ibb.co/dcRWNmp"><img src="https://i.ibb.co/xsNCnFg/Screenshot-2024-04-02-230332.png" alt="Screenshot-2024-04-02-230332" border="0"></a>
+<a href="https://ibb.co/wCSWc3m"><img src="https://i.ibb.co/WFkyVqJ/Screenshot-2024-04-02-230344.png" alt="Screenshot-2024-04-02-230344" border="0"></a>
