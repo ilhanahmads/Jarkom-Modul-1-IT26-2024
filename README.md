@@ -18,10 +18,11 @@ Flag: `JARKOM2024{Brut3f0rce_FtP_uhwlPzpfyAFskr9}`
 <a href="https://ibb.co/19KwWqt"><img src="https://i.ibb.co/rZM1r6R/Screenshot-2024-03-30-234408.png" alt="Screenshot-2024-03-30-234408" border="0"></a> \
 Masih pada file `ftp.pcap` yang berisi serangkaian paket yang menunjukkan aktivitas seseorang tak dikenal yang hendak melakukan login dengan cara _brute force_. Namun, kali ini problem yang diberikan adalah berapa kali hacker telah mencoba melakukan _brute force_ sebelum akhirnya menemukan password yang benar pada soal sebelumnya. 
 
-<a href="https://ibb.co/hCkvDFJ"><img src="https://i.ibb.co/b7xnz5M/Screenshot-2024-03-30-234456.png" alt="Screenshot-2024-03-30-234456" border="0"></a> \
+<a href="https://ibb.co/hCkvDFJ"><img src="https://i.ibb.co/b7xnz5M/Screenshot-2024-03-30-234456.png" alt="Screenshot-2024-03-30-234456" border="0"></a>
+<a href="https://ibb.co/h104JyV"><img src="https://i.ibb.co/R48sk9c/flag-howmany.png" alt="flag-howmany" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>image full page</a><br /> \
 Pada soal ini kami memanfaatkan _packet analyzer_ bawaan dari Wireshark itu sendiri yaitu `tshark` dengan menjalankan command `tshark -q -r ftp.pcap -z io,stat,0, "COUNT(frame)frame matches \"Login incorrect"\"` pada directory yang sesuai dengan tempat file `ftp.pcap` berada. Output dari command tersebut adalah mencari frame atau potongan kalimat dalam file bernama `ftp.pcap` yang mengandung **Login incorrect** di dalamnya kemudian akan dihitung hasilnya. Ternyata didapatkan hasil sebanyak **934** kali _brute force_ gagal yang dilakukan oleh hacker. Setelah itu kami mendapatkan flag berikut untuk disubmit di platform ctfd:
 
-Flag: `JARKOM2024{c0unT_uR_P4cket5_9h8kv7xjl6VtCrY}`
+Flag: `JARKOM2024{c0unT_uR_P4cket5_9T8CYcAti6ke88t}`
 
 # 3. Trace Him
 <a href="https://ibb.co/x69mSjY"><img src="https://i.ibb.co/GRYsv29/Screenshot-2024-03-30-234634.png" alt="Screenshot-2024-03-30-234634" border="0"></a> \
