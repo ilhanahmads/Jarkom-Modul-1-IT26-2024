@@ -59,6 +59,7 @@ Masih pada file `evidence.pcap` yang berisi serangkaian percobaan masuk oleh att
 Setelah kami buka pada Visual Studio Code, kami menemukan serangkaian code mencurigakan yang sepertinya sudah mengalami proses encode. 
 
 <a href="https://ibb.co/wCSWc3m"><img src="https://i.ibb.co/WFkyVqJ/Screenshot-2024-04-02-230344.png" alt="Screenshot-2024-04-02-230344" border="0"></a>
+<a href="https://ibb.co/HV7D6PN"><img src="https://i.ibb.co/CzB5g9J/Screenshot-2024-03-30-235520.png" alt="Screenshot-2024-03-30-235520" border="0"></a> \
 Dengan menggunakan bantuan dari decoder online, kami mencoba mendecode code mencurigakan tersebut dengan format base64. Benar saja, setelah berhasil kami decode, kami mengetahui bahwa attacker ini bernama **Paul Atreides**. Setelah berhasil menemukan nama attacker, kami menjawab pertanyaan soal dan mendapatkan flag berikut untuk disubmit di platform ctfd:
 
 Flag: `JARKOM2024{Duk3_0f_4rak!s_LISAN AL GHAIB!_uhwCYbpjlRJsCAB}`
