@@ -21,7 +21,7 @@ Masih pada file `ftp.pcap` yang berisi serangkaian paket yang menunjukkan aktivi
 <a href="https://ibb.co/hCkvDFJ"><img src="https://i.ibb.co/b7xnz5M/Screenshot-2024-03-30-234456.png" alt="Screenshot-2024-03-30-234456" border="0"></a> \
 Pada soal ini kami memanfaatkan _packet analyzer_ bawaan dari Wireshark itu sendiri yaitu `tshark` dengan menjalankan command `tshark -q -r ftp.pcap -z io,stat,0, "COUNT(frame)frame matches \"Login incorrect"\"` pada directory yang sesuai dengan tempat file `ftp.pcap` berada. Output dari command tersebut adalah mencari frame atau potongan kalimat dalam file bernama `ftp.pcap` yang mengandung **Login incorrect** di dalamnya kemudian akan dihitung hasilnya. Ternyata didapatkan hasil sebanyak **934** kali _brute force_ gagal yang dilakukan oleh hacker. Setelah itu kami mendapatkan flag berikut untuk disubmit di platform ctfd:
 
-Flag: JARKOM2024{c0unT_uR_P4cket5_9h8kv7xjl6VtCrY}
+Flag: `JARKOM2024{c0unT_uR_P4cket5_9h8kv7xjl6VtCrY}`
 
 # 3. Trace Him
 <a href="https://ibb.co/x69mSjY"><img src="https://i.ibb.co/GRYsv29/Screenshot-2024-03-30-234634.png" alt="Screenshot-2024-03-30-234634" border="0"></a> \
@@ -30,7 +30,7 @@ Masih pada file `ftp.pcap` yang berisi serangkaian paket yang menunjukkan aktivi
 <a href="https://ibb.co/7rTSwjC"><img src="https://i.ibb.co/vLrc7Vq/Screenshot-2024-03-31-000349.png" alt="Screenshot-2024-03-31-000349" border="0"></a> \
 Dari cuplikan screenshot beberapa paket di atas ditemukan bahwa setelah beberapa kali hacker melakukan _brute force_, akhirnya hacker berhasil melakukan login. Kami menganalisis bahwa sebagian besar proses tercapture pada paket berprotokol FTP. Oleh karena itu, kami memfilter capture dengan menggunakan command `ftp`. Setelah menganalisis paket dari awal sampai akhir, ditemukan bahwa hacker berhasil login dengan menggunakan password `m4y_th3_Kn!fe_ch1p_&_sh4tter`. Dari capture tersebut dapat diketahui _source_ dan _destination_ pada sebuah paket yang mana _source_ merupakan alamat IP seseorang yang melakukan aktivitas (dalam konteks soal ini adalah _brute force_) dan _destination_ merupakan target serangannya sehingga dapat disimpulkan bahwa alamat IP dari attacker adalah _source_ yang tertera pada tampilan interface Wireshark. Jawab pertanyaan dengan alamat IP tersebut. Setelah itu kami mendapatkan flag berikut untuk disubmit di platform ctfd:
 
-Flag: `JARKOM2024{Wh3re'5_thE_S4uce_xhw8RzxjyRJo88q}`
+Flag: `JARKOM2024{Wh3re'5_thE_S4uce_x6fkX7xfyRVsCAB}`
 
 # 4. Creds
 <a href="https://ibb.co/1s6yQDX"><img src="https://i.ibb.co/YDZnQzd/Screenshot-2024-03-31-000750.png" alt="Screenshot-2024-03-31-000750" border="0"></a> \
@@ -39,7 +39,7 @@ Beralih ke file `evidence.pcap`. File pcap tersebut berisi serangkaian percobaan
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/wg0j3qF/Screenshot-2024-03-30-234946.png" alt="Screenshot-2024-03-30-234946" border="0"></a> \ 
 Setelah berhasil mendapatkan kredensial attacker, kami menjawab pertanyaan soal dan mendapatkan flag berikut untuk disubmit di platform ctfd:
 
-Flag: `JARKOM2024{s3curE_uR_FtP_96wlPzxyyzdek8t}`
+Flag: `JARKOM2024{s3curE_uR_FtP_xTrCv7nygRJsCrB}`
 
 # 5. Malwleowleo
 <a href="https://ibb.co/Y70FRS3"><img src="https://i.ibb.co/yn4cfCX/Screenshot-2024-04-02-224939.png" alt="Screenshot-2024-04-02-224939" border="0"></a>
@@ -49,7 +49,7 @@ Masih pada file `evidence.pcap` yang berisi serangkaian percobaan masuk oleh att
 <a href="https://ibb.co/pZbTXp8"><img src="https://i.ibb.co/92c0YjL/Screenshot-2024-03-30-235030.png" alt="Screenshot-2024-03-30-235030" border="0"></a> \
 Setelah berhasil menemukan file malware yang dikirim oleh attacker, kami menjawab pertanyaan soal dan mendapatkan flag berikut untuk disubmit di platform ctfd:
 
-Flag: `JARKOM2024{beC4refUl_0f_m4lwAr3_u6fCPcnyl1keCrB}`
+Flag: `JARKOM2024{beC4refUl_0f_m4lwAr3_cT8RYzpHizdHRrB}`
 
 # 6. Whoami
 <a href="https://ibb.co/dpDD1gR"><img src="https://i.ibb.co/gWJJHVx/Screenshot-2024-04-02-230221.png" alt="Screenshot-2024-04-02-230221" border="0"></a> \
@@ -62,4 +62,4 @@ Setelah kami buka pada Visual Studio Code, kami menemukan serangkaian code mencu
 <a href="https://ibb.co/HV7D6PN"><img src="https://i.ibb.co/CzB5g9J/Screenshot-2024-03-30-235520.png" alt="Screenshot-2024-03-30-235520" border="0"></a> \
 Dengan menggunakan bantuan dari decoder online, kami mencoba mendecode code mencurigakan tersebut dengan format base64. Benar saja, setelah berhasil kami decode, kami mengetahui bahwa attacker ini bernama **Paul Atreides**. Setelah berhasil menemukan nama attacker, kami menjawab pertanyaan soal dan mendapatkan flag berikut untuk disubmit di platform ctfd:
 
-Flag: `JARKOM2024{Duk3_0f_4rak!s_LISAN AL GHAIB!_uhwCYbpjlRJsCAB}`
+Flag: `JARKOM2024{Duk3_0f_4rak!s_LISAN AL GHAIB!_9JrCv79yl1kH88B}`
