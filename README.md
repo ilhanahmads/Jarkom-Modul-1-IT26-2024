@@ -3,7 +3,7 @@ Laporan Resmi pengerjaan soal shift modul 1 Praktikum Jaringan Komputer 2024 Kel
 
 ## Anggota Kelompok
 1. Ilhan Ahmad Syafa (5027221040)
-2. george David Neborre (5027221043)
+2. George David Neborre (5027221043)
 
 # 1. ATM or ATP or FTP
 <a href="https://ibb.co/5WktcNC"><img src="https://i.ibb.co/WW0qKb7/Screenshot-2024-03-30-234253.png" alt="Screenshot-2024-03-30-234253" border="0"></a> \
@@ -64,3 +64,8 @@ Setelah kami buka pada Visual Studio Code, kami menemukan serangkaian code mencu
 Dengan menggunakan bantuan dari decoder online, kami mencoba mendecode code mencurigakan tersebut dengan format base64. Benar saja, setelah berhasil kami decode, kami mengetahui bahwa attacker ini bernama **Paul Atreides**. Setelah berhasil menemukan nama attacker, kami menjawab pertanyaan soal dan mendapatkan flag berikut untuk disubmit di platform ctfd:
 
 Flag: `JARKOM2024{Duk3_0f_4rak!s_LISAN AL GHAIB!_9JrCv79yl1kH88B}`
+
+# Kendala
+1. Kurangnya pengalaman atau masih awam terkait CTF.
+2. Kurangnya kemampuan dalam menganalisis soal dan file `.pcap` yang tersedia.
+3. Kedua poin di atas menyebabkan durasi yang digunakan dalam menjawab soal cukup lama sehingga menyita waktu yang seharusnya dapat digunakan untuk mengerjakan soal lainnya.
